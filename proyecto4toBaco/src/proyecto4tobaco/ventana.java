@@ -1,5 +1,9 @@
 package proyecto4tobaco;
 
+import static java.awt.Color.GRAY;
+import static java.awt.Color.GREEN;
+import static java.awt.Color.ORANGE;
+import static java.awt.Color.cyan;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -50,6 +54,8 @@ public class ventana extends JFrame {
         panelInicioSesion.setLayout(null);
         this.getContentPane().add(panelInicioSesion);
         this.setTitle("Inicio Sesion");
+        panelInicioSesion.setBackground(GREEN);
+        
 //ETIQUETAS
         JLabel lblUsuario = new JLabel("Ingrese su usuario");
         lblUsuario.setBounds(50, 50, 150, 20);
@@ -114,6 +120,9 @@ public class ventana extends JFrame {
         panelNuevoUsuario.setLayout(null);
         this.getContentPane().add(panelNuevoUsuario);
         this.setTitle("Nuevo Usuario");
+        panelNuevoUsuario.setBackground(cyan);
+        
+        
         JLabel NewNombre = new JLabel("Ingrese nombre de usuario");
         NewNombre.setBounds(50, 50, 250, 20);
         panelNuevoUsuario.add(NewNombre);
@@ -196,6 +205,8 @@ public class ventana extends JFrame {
         panelClientes.setLayout(null);
         this.getContentPane().add(panelClientes);
         this.setTitle("Dashboard de clientes");
+        panelClientes.setBackground(ORANGE);
+        
         //boton
 
         //tabla
@@ -263,6 +274,8 @@ public class ventana extends JFrame {
         panelNuevoCliente.setLayout(null);
         this.getContentPane().add(panelNuevoCliente);
         this.setTitle("Nuevo Cliente");
+        panelNuevoCliente.setBackground(GRAY);
+        
 
         JLabel lblNit = new JLabel("NIT del Cliente");
         lblNit.setBounds(50, 50, 250, 20);
