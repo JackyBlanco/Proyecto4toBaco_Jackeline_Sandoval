@@ -35,15 +35,16 @@ public class ventana extends JFrame {
         this.setVisible(true);
         
        misUsuarios[0] = new usuario("Admin", "123");
+       
         misClientes[0] = new cliente("741", "Andy", 24, 'M');
-        misClientes[1] = new cliente("742", "Misael", 39, 'M');
+        misClientes[1] = new cliente("762", "Misael", 39, 'M');
         misClientes[2] = new cliente("743", "Jose", 30, 'M');
-        misClientes[3] = new cliente("744", "Daniel", 24, 'M');
+        misClientes[3] = new cliente("714", "Daniel", 24, 'M');
         misClientes[4] = new cliente("745", "Derick", 22, 'M');
         misClientes[5] = new cliente("746", "Mayelen", 27, 'F');
         misClientes[6] = new cliente("134", "Alasha", 27, 'F');
         misClientes[7] = new cliente("689", "Carol", 27, 'F');
-        misClientes[8] = new cliente("7463", "Brandon", 27, 'M');
+        misClientes[8] = new cliente("783", "Brandon", 27, 'M');
         misClientes[9] = new cliente("723", "Lucia", 27, 'F');
         
     }
@@ -303,9 +304,9 @@ public class ventana extends JFrame {
         txtGenero.setBounds(250, 140, 150, 20);
         panelNuevoCliente.add(txtGenero);
 
-        JButton btnSaveClient = new JButton("Guardar Cliente");
-        btnSaveClient.setBounds(50, 180, 150, 20);
-        panelNuevoCliente.add(btnSaveClient);
+        JButton btnGuardarCliente = new JButton("Guardar Cliente");
+        btnGuardarCliente.setBounds(50, 180, 150, 20);
+        panelNuevoCliente.add(btnGuardarCliente);
 
         ActionListener saveClient = (ActionEvent e) -> {
             String nit = txtNit.getText();
@@ -319,7 +320,7 @@ public class ventana extends JFrame {
             txtEdad.setText("");
             txtGenero.setText("");
         };
-        btnSaveClient.addActionListener(saveClient);
+        btnGuardarCliente.addActionListener(saveClient);
 
         JButton btnRegresaar = new JButton("Volver a Clientes");
         btnRegresaar.setBounds(50, 210, 150, 20);
